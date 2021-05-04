@@ -27,6 +27,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           q.Casefold(session.user.email)
         )
       )
+
     )
 
     let customerId = user.data.stripe_customer_id;
